@@ -1,0 +1,160 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: "Poppins", sans-serif;;
+    background-color: #eaebec;
+}
+
+
+h6{
+    color: #928c8c;
+    font-size: 13px;
+    padding-left: 35px;
+}
+
+h5{
+    font-size: 16px;
+    line-height: normal;
+}
+
+h4{
+    font-size: 24px;
+}
+
+h3{
+    font-size: 18px; 
+    justify-content: stretch;  
+}
+
+p{
+    font-size: 12px;
+    justify-content: stretch;
+}
+
+img{
+    width: 25px; 
+    border-radius: 20px;
+    padding-right: 5px;
+}
+
+.testimony{
+    display: flex;
+    gap: 10px;
+}
+
+
+.container{
+    color: #000000;
+    margin: 80px;
+    height: 70vh;
+    border-radius: 10px;
+
+    display: grid;
+    grid-template-areas: 
+    "contain1 contain3"
+    "contain2 contain3"
+    ;
+
+    grid-template-columns: 905px 285px;
+}
+
+.contain1{
+    grid-area: contain1;
+
+    display: grid;
+    grid-template-areas: 
+    "first second"
+    ;
+    
+    grid-template-columns: 620px 285px;
+    grid-template-rows: 300px;
+}
+
+.contain2{
+    /* background-color:blueviolet; */
+    display: grid;
+    grid-area: contain2;
+
+    grid-template-areas: 
+    "fourth fifth"
+    ;
+
+    grid-template-columns: 285px 620px;
+    grid-template-rows: 280px;
+}
+
+.contain3{
+    color:rgba(0, 0, 0, 0.795);
+    background-color: #fff;
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+    display: grid;
+    p{
+        font-size: 13px;
+        color: #746b6b;
+    }
+
+    grid-area: contain3;
+    
+}
+
+.first,
+.second{
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.first{
+    background-color: #733fc7;
+    background-image: url("images\background .jpg");
+    color: #fff;
+    p{
+        color: #d3c2f3;
+        font-size: 12px;
+    }    
+}
+
+.second{
+    background-color: #49556a;
+    color: #fff;
+    p{
+        font-size: 12px;
+    }
+}
+
+.fourth,
+.fifth{
+    margin: 15px;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.fourth{
+    background-color: #fff;
+    color: rgba(0, 0, 0, 0.795);
+    p{
+        color: #746b6b;
+    }
+}
+
+.fifth{
+    background-color: #19202e;
+    color: #fff;
+    p{
+        color: #d6c9c9;
+    }
+}
+
+@media(min-width: 600px) {
+    .contain1,
+    .contain2,
+    .contain3{
+        display: flex;
+    }
+} 
